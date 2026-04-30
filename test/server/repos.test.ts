@@ -354,7 +354,7 @@ describe('Repos router', () => {
       })
       .catch((error) => {
         expect(error.message).toMatch(
-          /String must contain at most 100 character\(s\)/,
+          /Mirror name cannot exceed 100 characters/,
         )
       })
   })
