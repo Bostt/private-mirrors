@@ -74,7 +74,13 @@
       }
     ]
   },
-  "include": ["src", "test", ".next/types/**/*.ts", ".next/dev/types/**/*.ts"],
+  "include": [
+    "src",
+    "test",
+    ".next/types/**/*.ts",
+    ".next/dev/types/**/*.ts",
+    "vitest.d.ts"
+  ],
   "exclude": ["node_modules"],
   "compileOnSave": false
 }
