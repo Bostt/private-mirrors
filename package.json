@@ -19,6 +19,7 @@
     "bot:build": "tsc ./src/bot/index.ts --noEmit false --esModuleInterop --outDir ./build",
     "bot:start": "probot run ./build/index.js",
     "test": "npm run type-check && TEST_LOGGING=1 ts-node -O '{\"module\":\"commonjs\"}' node_modules/jest/bin/jest.js",
+    "test:vitest": "TEST_LOGGING=1 vitest run",
     "prepare": "husky || true"
   },
   "dependencies": {
@@ -74,7 +75,11 @@
     "ts-jest": "29.3.4",
     "ts-node": "10.9.2",
     "typescript": "5.8.3",
-    "typescript-eslint": "8.54.0"
+    "typescript-eslint": "8.54.0",
+    "vitest": "4.1.5",
+    "@vitest/coverage-v8": "4.1.5",
+    "@vitest/eslint-plugin": "1.6.16",
+    "vite-tsconfig-paths": "6.1.1"
   },
   "engines": {
     "node": "^22 || ^24"
